@@ -91,13 +91,13 @@ class _LoginPageState extends State<LoginPage> {
                 name: "Ввести имя",
                 onPressed: isButtonActive
                     ? () {
-                        Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const HomePage(
-                                      'SVOI APP',
-                                      title: 'SVOI App',
-                                    )));
+                        if (stayLogged!) {
+                          saveAsLogged(stayLogged, _controller.text);
+                          Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const HomePage()));
+                        }
                         setState(() {});
                       }
                     : null,

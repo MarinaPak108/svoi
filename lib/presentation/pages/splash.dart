@@ -54,12 +54,7 @@ class _SplashState extends State<_Splash> {
       }
       //Navigator.push() esli nujno nazad na stranicu wernutsja tak kak on zagrujaet power predidushei stranici = sohranjaet predidushuju stranicu
       Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(
-              builder: (cxt) => const HomePage(
-                    'SVOI',
-                    title: 'SVOI',
-                  )));
+          context, MaterialPageRoute(builder: (cxt) => const HomePage()));
     }
     //if stay logged in => redirect to home page
     else {
