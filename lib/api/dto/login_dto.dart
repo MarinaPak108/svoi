@@ -1,6 +1,3 @@
-import 'package:flutter/material.dart';
-import 'package:svoi/presentation/pages/login.dart';
-
 class LoginParameters {
   final String login;
   final String pwd;
