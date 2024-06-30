@@ -11,7 +11,6 @@ class InputField extends StatelessWidget {
   final Widget? richText;
   final int lines;
   final bool isLatinOnly;
-  final bool isActive;
   final double? fontSz;
 
   const InputField(
@@ -21,7 +20,6 @@ class InputField extends StatelessWidget {
       this.isPwdVisible = false,
       this.richText,
       this.lines = 1,
-      this.isActive = true,
       this.isLatinOnly = false,
       this.fontSz,
       this.icn})
@@ -33,7 +31,6 @@ class InputField extends StatelessWidget {
       padding: EdgeInsets.all(glb.globalHeight * 0.1),
       child: TextField(
         maxLines: lines,
-        enabled: isActive,
         obscureText: isPwdVisible,
         inputFormatters: (isLatinOnly)
             ? <TextInputFormatter>[

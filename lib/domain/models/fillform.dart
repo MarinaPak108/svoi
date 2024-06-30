@@ -19,4 +19,13 @@ class FillForm {
     reasons.add(reasons6);
     return reasons;
   }
+
+  List<FormModel> initGender() {
+    List<FormModel> result = [];
+    FormModel male = FormModel(formName: "М", formCode: "");
+    result.add(male);
+    FormModel female = FormModel(formName: "Ж", formCode: "");
+    result.add(female);
+    return result;
+  }
 }
