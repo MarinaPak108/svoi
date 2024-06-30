@@ -31,7 +31,10 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("SVOI APP"),
+          title: const Text(
+            "SVOI APP",
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.w800),
+          ),
           actions: <Widget>[
             //IconButton
             IconButton(

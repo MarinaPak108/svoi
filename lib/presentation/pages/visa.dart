@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:svoi/presentation/pages/visa/other_data.dart';
-import 'package:svoi/presentation/pages/visa/personal_data.dart';
 import 'package:svoi/presentation/pages/visa/visa_data.dart';
 import 'package:svoi/presentation/widgets/tap.dart';
 
